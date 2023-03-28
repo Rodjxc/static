@@ -21,6 +21,59 @@
     background-image: url(../img/img/paven.png);
   }
 
+  a{
+  color: #529125;
+  text-decoration: none;  }
+
+  a:visited{
+    color: #529125;
+    text-decoration: none;  }
+
+   a:hover{
+      color: #912525;
+      text-decoration: none;  }
+  /*Formularios*/
+
+  input [type="text"],
+  input [type="email"],
+  input [type="password"],
+  select {
+    border: 1px #c9c9c9;
+    box-shadow: 0px 0px 2px #ccc inset;
+    background: white;
+    padding: 1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: grey;
+    transition:all 200ms;
+  }
+
+  input[type="button"],
+  input[type="summit"],
+  input[select="reset"],
+  button {
+  display: block;
+  border-radius: 2px;
+  border: 1px solid green;
+  cursor: pointer;
+  width: 60px;
+  padding: 3px;
+  background-color: #70b231;
+}
+
+  input[type="button"]:hover,
+  input[type="summit"]:hover,
+  input[select="reset"]:hover,
+  button:hover {
+  box-shadow:0px 0px 2px grey;
+  }
+  input[type="button"]:active,
+  input[type="summit"]:active,
+input[select="reset"]:active,
+button:active {
+box-shadow:0px 0px 2px rgb(46, 44, 44) inset;
+}
+  
   /* CABECERA*/
 
   #header {
@@ -146,3 +199,94 @@ box-shadow: 0px 0px 4px green inset; /* inset es para sombra interior*/
   
    
   }
+
+  /*CONTENIDO*/
+
+  #content {
+    width: 1250px;
+    min-height: 1100px;
+    margin: 0px auto;
+  }
+
+  /*Barra lateral*/
+
+  #aside, #frase {
+    clear: both;
+    width: 200px;
+    float: left;
+    margin: 30px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(119, 102, 102);
+    box-shadow: 1px 3px 2px #ccc ;
+    font-family: sans-serif, Arial, Helvetica;
+  }
+
+  #frase{
+    width: 180px;
+    padding: 10px;
+    font-family: sans-serif;
+    padding: 5px 5px;
+  }
+
+  #aside .widget{
+    display: block;
+    width: 180px;
+    margin: 6px auto;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    border-bottom: 1px dashed #3333;
+  }
+
+  #aside .widget:last-child{
+    margin-bottom: 20px;
+  }
+
+  #aside h3{
+    display: block;
+    color: #333333;
+    width: 100%;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background: #c2b3b3;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 15px;
+  }
+
+  #aside li {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    list-style: square;
+  }
+
+  /* Formularios barra lateral*/
+
+  #aside div label,
+  #aside div input[type="text"],
+  #aside div input[type="email"],
+  #aside div input[type="password"],
+  #aside div a {
+    display: block;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  #aside div form input[type="button"], 
+  #aside div form input[type="submit"], 
+  #aside div form button {
+    margin-top: 6px;
+    margin-bottom: 10px;
+  }
+
+  #aside input,
+  #aside label {
+    margin: 0 auto;
+    text-align: center;
+  }
+
